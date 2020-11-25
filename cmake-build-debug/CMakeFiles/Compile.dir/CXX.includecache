@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/C++ files/Compile/cmake-build-debug/run.h
+iostream
+-
+cstring
+-
+vector
+-
+
+D:/C++ files/Compile/main.cpp
+cstdio
+-
+iostream
+-
+cstring
+-
+vector
+-
+fstream
+-
+algorithm
+-
+D:/C++ files/Compile/cmake-build-debug/run.h
+-
+

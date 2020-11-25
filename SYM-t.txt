@@ -1,0 +1,372 @@
+0, Root
+1 135 
+
+1, Program
+2 
+
+2, Sub_program
+3 10 16 80 
+
+3, Const
+4 5 9 
+
+4, const
+
+5, Const_def
+6 7 8 
+
+6, a
+
+7, =
+
+8, 10
+
+9, ;
+
+10, Var
+11 12 13 14 15 
+
+11, var
+
+12, b
+
+13, ,
+
+14, c
+
+15, ;
+
+16, Procedure
+17 21 62 63 
+
+17, Procedure_head
+18 19 20 
+
+18, procedure
+
+19, p
+
+20, ;
+
+21, Sub_program
+22 39 
+
+22, Procedure
+23 27 38 
+
+23, Procedure_head
+24 25 26 
+
+24, procedure
+
+25, q
+
+26, ;
+
+27, Sub_program
+28 
+
+28, Sentence
+29 
+
+29, Combain
+30 31 35 36 37 
+
+30, begin
+
+31, Sentence
+32 
+
+32, Call
+33 34 
+
+33, call
+
+34, q
+
+35, ;
+
+36, Sentence
+
+37, end
+
+38, ;
+
+39, Sentence
+40 
+
+40, Combain
+41 42 54 55 59 60 61 
+
+41, begin
+
+42, Sentence
+43 
+
+43, Eq
+44 45 46 
+
+44, c
+
+45, :=
+
+46, Expression
+47 50 51 
+
+47, Term
+48 
+
+48, Factor
+49 
+
+49, b
+
+50, +
+
+51, Term
+52 
+
+52, Factor
+53 
+
+53, a
+
+54, ;
+
+55, Sentence
+56 
+
+56, Call
+57 58 
+
+57, call
+
+58, q
+
+59, ;
+
+60, Sentence
+
+61, end
+
+62, ;
+
+63, Procedure
+64 68 79 
+
+64, Procedure_head
+65 66 67 
+
+65, procedure
+
+66, t
+
+67, ;
+
+68, Sub_program
+69 
+
+69, Sentence
+70 
+
+70, Combain
+71 72 76 77 78 
+
+71, begin
+
+72, Sentence
+73 
+
+73, Call
+74 75 
+
+74, call
+
+75, p
+
+76, ;
+
+77, Sentence
+
+78, end
+
+79, ;
+
+80, Sentence
+81 
+
+81, Combain
+82 83 89 90 134 
+
+82, begin
+
+83, Sentence
+84 
+
+84, Read
+85 86 87 88 
+
+85, read
+
+86, (
+
+87, b
+
+88, )
+
+89, ;
+
+90, Sentence
+91 
+
+91, While
+92 93 103 104 
+
+92, while
+
+93, Rules
+94 98 99 
+
+94, Expression
+95 
+
+95, Term
+96 
+
+96, Factor
+97 
+
+97, b
+
+98, #
+
+99, Expression
+100 
+
+100, Term
+101 
+
+101, Factor
+102 
+
+102, 0
+
+103, do
+
+104, Sentence
+105 
+
+105, Combain
+106 107 111 112 124 125 131 132 133 
+
+106, begin
+
+107, Sentence
+108 
+
+108, Call
+109 110 
+
+109, call
+
+110, p
+
+111, ;
+
+112, Sentence
+113 
+
+113, Write
+114 115 116 123 
+
+114, write
+
+115, (
+
+116, Expression
+117 
+
+117, Term
+118 120 121 
+
+118, Factor
+119 
+
+119, 2
+
+120, *
+
+121, Factor
+122 
+
+122, c
+
+123, )
+
+124, ;
+
+125, Sentence
+126 
+
+126, Read
+127 128 129 130 
+
+127, read
+
+128, (
+
+129, b
+
+130, )
+
+131, ;
+
+132, Sentence
+
+133, end
+
+134, end
+
+135, .
+
+a 0 10 0 -1
+b 1 -1 0 3
+c 1 -1 0 4
+p 2 -1 0 1
+q 2 -1 1 2
+t 2 -1 0 13
+
+0: jmp 0 17
+1: jmp 0 6
+2: jmp 0 3
+3: int 0 3
+4: cal 1 2
+5: opr 0 0
+6: int 0 3
+7: lod 1 3
+8: lit 0 10
+9: opr 0 2
+10: sto 1 4
+11: cal 0 2
+12: opr 0 0
+13: jmp 0 14
+14: int 0 3
+15: cal 1 1
+16: opr 0 0
+17: int 0 5
+18: opr 0 16
+19: sto 0 3
+20: lod 0 3
+21: lit 0 0
+22: opr 0 9
+23: jpc 0 33
+24: cal 0 1
+25: lit 0 2
+26: lod 0 4
+27: opr 0 4
+28: opr 0 14
+29: opr 0 15
+30: opr 0 16
+31: sto 0 3
+32: jmp 0 20
+33: opr 0 0
